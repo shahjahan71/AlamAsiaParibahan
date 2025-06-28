@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'alam-asia-paribahan-server.vercel.app/api';
+const API_BASE_URL = 'https://alam-asia-paribahan-server.vercel.app/api';
 
 export const fetchSchedule = async (dateString) => {
   try {
