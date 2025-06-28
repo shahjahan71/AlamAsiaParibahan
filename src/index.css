@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-400 rounded-full;
+}
+
+  
+  /* Smooth transitions */
+  .bus-card {
+    transition: all 0.3s ease;
+  }
+  
+  /* Print styles */
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    .print-container, .print-container * {
+      visibility: visible;
+    }
+    .print-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+/* Ensure date picker portal has proper z-index */
+.react-datepicker-popper {
+    z-index: 50 !important;
+  }
+  
+  /* Mobile overflow handling */
+  @media (max-width: 640px) {
+    .react-datepicker {
+      transform: translate3d(0, 0, 0) !important;
+      width: 100vw !important;
+      max-width: 320px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
+  }
