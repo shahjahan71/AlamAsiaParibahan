@@ -40,8 +40,8 @@ const SchedulePage = () => {
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-6 text-white">
-            <h1 className="text-3xl font-bold">Bus Schedule Management</h1>
-            <p className="opacity-90">Daily rotation system for 80 buses</p>
+            <h1 className="text-3xl font-bold">Alam Asia Paribahan (Pvt) LTD</h1>
+            <p className="opacity-90">Bus Schedule Management system</p>
           </div>
           
           <div className="p-6">
