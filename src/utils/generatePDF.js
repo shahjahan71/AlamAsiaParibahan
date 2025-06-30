@@ -167,6 +167,11 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
     head: runningHeaders,
     body: runningData,
     startY: 30,
+    columnStyles: {
+      0: { fillColor: [220, 220, 220] }, // Soft black (gray) background for position columns
+      3: { fillColor: [220, 220, 220] }, // Soft black (gray) background for position columns
+      6: { fillColor: [220, 220, 220] }  // Soft black (gray) background for position columns
+    },
     didDrawPage: function(data) {
       doc.setFontSize(10);
       doc.setTextColor(0, 0, 0);
@@ -206,9 +211,9 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
     body: offChartData,
     startY: 30,
     columnStyles: {
-      2: { cellWidth: 10 },
-      5: { cellWidth: 10 },
-      8: { cellWidth: 10 }
+      2: { cellWidth: 30 }, // Wider empty column for writing
+      5: { cellWidth: 30 }, // Wider empty column for writing
+      8: { cellWidth: 30 }  // Wider empty column for writing
     }
   });
 
