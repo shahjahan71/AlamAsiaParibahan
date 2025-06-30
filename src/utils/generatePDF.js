@@ -30,7 +30,7 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
       fillColor: false, // No background
       textColor: [0, 0, 0],
       fontStyle: 'bold', // Bold headers
-      fontSize: 10,
+      fontSize: 11, // Increased from 10
       lineWidth: 0.1,
       lineColor: [0, 0, 0] // Black borders
     },
@@ -38,7 +38,7 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
       fillColor: false, // No background
       textColor: [0, 0, 0],
       fontStyle: 'bold', // Bold body text
-      fontSize: 10,
+      fontSize: 11, // Increased from 10
       lineWidth: 0.1,
       lineColor: [0, 0, 0] // Black borders
     },
@@ -48,7 +48,7 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
     margin: { top: 30 },
     styles: {
       cellPadding: 2,
-      fontSize: 10,
+      fontSize: 11, // Increased from 10
       fontStyle: 'bold', // All text bold
       halign: 'center',
       lineWidth: 0.1,
@@ -211,6 +211,9 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
     body: offChartData,
     startY: 30,
     columnStyles: {
+      0: { fillColor: [220, 220, 220] }, // Soft black (gray) background for position columns
+      3: { fillColor: [220, 220, 220] }, // Soft black (gray) background for position columns
+      6: { fillColor: [220, 220, 220] }, // Soft black (gray) background for position columns
       2: { cellWidth: 30 }, // Wider empty column for writing
       5: { cellWidth: 30 }, // Wider empty column for writing
       8: { cellWidth: 30 }  // Wider empty column for writing
