@@ -30,7 +30,7 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
       fillColor: false, // No background
       textColor: [0, 0, 0],
       fontStyle: 'bold', // Bold headers
-      fontSize: 11, // Increased from 10
+      fontSize: 10, // Increased from 10
       lineWidth: 0.1,
       lineColor: [0, 0, 0] // Black borders
     },
@@ -38,7 +38,7 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
       fillColor: false, // No background
       textColor: [0, 0, 0],
       fontStyle: 'bold', // Bold body text
-      fontSize: 11, // Increased from 10
+      fontSize: 10, // Increased from 10
       lineWidth: 0.1,
       lineColor: [0, 0, 0] // Black borders
     },
@@ -48,7 +48,7 @@ export const generatePDF = (date, runningBuses, offChartBuses) => {
     margin: { top: 30 },
     styles: {
       cellPadding: 2,
-      fontSize: 11, // Increased from 10
+      fontSize: 10, // Increased from 10
       fontStyle: 'bold', // All text bold
       halign: 'center',
       lineWidth: 0.1,
