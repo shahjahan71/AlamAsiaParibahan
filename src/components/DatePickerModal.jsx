@@ -23,7 +23,7 @@ const DatePickerModal = ({ selectedDate, onDateChange, onClose }) => {
             selected={selectedDate}
             onChange={onDateChange}
             minDate={new Date(2025, 5, 1)}
-            maxDate={new Date(2025, 11, 31)}
+            maxDate={new Date(2026, 11, 31)}
             calendarClassName="w-full border-0"
             dayClassName={() => "hover:bg-blue-50 rounded"}
             renderCustomHeader={({
