@@ -6,7 +6,7 @@ import ExportButton from '../components/ExportButton';
 import { format, parseISO } from 'date-fns'; // Add this import
 
 const SchedulePage = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date(2025, 12, 16));
+  const [selectedDate, setSelectedDate] = useState(new Date(2025, 11, 16));
   const [schedule, setSchedule] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
